@@ -1,4 +1,5 @@
- apt install nginx
+installation setup: 
+apt install nginx
 
 cd /var/www/html
 
