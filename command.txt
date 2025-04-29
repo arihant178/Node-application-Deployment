@@ -1,0 +1,41 @@
+ apt install nginx
+
+cd /var/www/html
+
+ufw app list
+
+sudo ufw allow 'Nginx Full'
+
+ sudo ufw enable
+
+mkdir nodeapp
+
+chmod 777 -R nodeapp
+
+sudo apt install nodejs npmll
+
+cd nodeapp/
+
+ npm init
+
+nano index.js -->paste code noadeapp code
+
+npm i express --.install express package
+
+npm install pm2 -->if node app crash pm2 restart the app
+
+ pm2 start index.js   /var/www/html/nodeapp/index.js
+
+nano nginx.conf ---> path->/etc/nginx/nginx.conf configure for reverse proxy
+
+ 
+
+systemctl reloads nginx
+
+systemctl enable nginx
+
+systemctl restart nginx
+
+check status
+
+then paste your public ip or dns dns
